@@ -59,9 +59,11 @@ class RequestHandler(BaseHTTPRequestHandler):
         payload = json.loads(body)
         #设置全局变量
         global_data.data = payload
+        # print(f'--------------ct是:{global_data.data["map"]["team_ct"]}, t是:{global_data.data["map"]["team_t"]}------------------')
         # with open("gsi_data.json", "w", encoding="utf-8") as f:
         #     json.dump(payload, f, ensure_ascii=False, indent=4)
         if payload['map']['phase'] == 'gameover' and gameover_flag == 0:
+            
             with open("gsi_data.json", "w", encoding="utf-8") as f:
                 json.dump(payload, f, ensure_ascii=False, indent=4)
             gameover_flag += 1

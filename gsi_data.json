@@ -2,55 +2,53 @@
     "provider": {
         "name": "Counter-Strike: Global Offensive",
         "appid": 730,
-        "version": 14061,
-        "steamid": "76561198070066414",
-        "timestamp": 1737281712
+        "version": 14067,
+        "steamid": "76561199483415321",
+        "timestamp": 1739453515
     },
     "phase_countdowns": {
         "phase": "freezetime",
-        "phase_ends_in": "-101.7"
+        "phase_ends_in": "-50.2"
     },
     "map": {
         "round_wins": {
             "1": "ct_win_elimination",
-            "2": "ct_win_elimination",
-            "3": "ct_win_time",
-            "4": "t_win_elimination",
-            "5": "t_win_bomb",
-            "6": "ct_win_elimination",
-            "7": "t_win_bomb",
+            "2": "ct_win_defuse",
+            "3": "ct_win_elimination",
+            "4": "ct_win_elimination",
+            "5": "ct_win_elimination",
+            "6": "t_win_elimination",
+            "7": "ct_win_elimination",
             "8": "ct_win_elimination",
             "9": "ct_win_elimination",
-            "10": "ct_win_elimination",
-            "11": "ct_win_time",
-            "12": "t_win_elimination",
+            "10": "t_win_elimination",
+            "11": "t_win_elimination",
+            "12": "ct_win_elimination",
             "13": "t_win_elimination",
             "14": "ct_win_elimination",
-            "15": "ct_win_defuse",
-            "16": "ct_win_defuse",
-            "17": "t_win_bomb",
-            "18": "t_win_elimination",
-            "19": "t_win_bomb",
-            "20": "ct_win_elimination",
-            "21": "ct_win_elimination",
-            "22": "ct_win_defuse",
-            "23": "t_win_elimination"
+            "15": "ct_win_elimination",
+            "16": "t_win_elimination",
+            "17": "ct_win_elimination",
+            "18": "ct_win_elimination",
+            "19": "ct_win_elimination",
+            "20": "t_win_elimination",
+            "21": "t_win_elimination"
         },
         "mode": "competitive",
-        "name": "de_anubis",
+        "name": "de_mirage",
         "phase": "gameover",
-        "round": 23,
+        "round": 21,
         "team_ct": {
-            "score": 10,
-            "name": "ATOX E-sports",
-            "consecutive_round_losses": 1,
-            "timeouts_remaining": 0,
+            "score": 8,
+            "name": "开chuang",
+            "consecutive_round_losses": 2,
+            "timeouts_remaining": 1,
             "matches_won_this_series": 0
         },
         "team_t": {
             "score": 13,
-            "name": "XO eSports",
-            "consecutive_round_losses": 1,
+            "name": "HLS GAME",
+            "consecutive_round_losses": 0,
             "timeouts_remaining": 1,
             "matches_won_this_series": 0
         },
@@ -61,31 +59,30 @@
         "win_team": "T"
     },
     "bomb": {
-        "state": "planted",
-        "position": "-1067.72, 599.97, -3.97",
-        "countdown": "35.3"
+        "state": "dropped",
+        "position": "1293.00, -353.09, -166.31"
     },
     "player": {
         "match_stats": {
-            "kills": 21,
-            "assists": 0,
+            "kills": 29,
+            "assists": 3,
             "deaths": 14,
             "mvps": 4,
-            "score": 52
+            "score": 61
         },
-        "spectarget": "76561197997147712",
-        "position": "-985.49, 262.06, -22.97",
-        "forward": "-0.41, 0.91, 0.01",
+        "spectarget": "76561198209361951",
+        "position": "444.61, -501.23, -159.97",
+        "forward": "-0.98, -0.15, -0.12",
         "weapons": {
             "weapon_0": {
-                "name": "weapon_knife_m9_bayonet",
-                "paintkit": "am_gamma_doppler_phase3",
+                "name": "weapon_knife_karambit",
+                "paintkit": "am_sapphire_marbleized",
                 "type": "Knife",
                 "state": "holstered"
             },
             "weapon_1": {
                 "name": "weapon_glock",
-                "paintkit": "aq_glock18_flames_blue",
+                "paintkit": "so_red",
                 "type": "Pistol",
                 "ammo_clip": 20,
                 "ammo_clip_max": 20,
@@ -93,90 +90,58 @@
                 "state": "holstered"
             },
             "weapon_2": {
+                "name": "weapon_molotov",
+                "paintkit": "default",
+                "type": "Grenade",
+                "ammo_reserve": 1,
+                "state": "holstered"
+            },
+            "weapon_3": {
                 "name": "weapon_awp",
-                "paintkit": "hy_zodiac2",
+                "paintkit": "cu_awp_asimov",
                 "type": "SniperRifle",
-                "ammo_clip": 2,
+                "ammo_clip": 0,
                 "ammo_clip_max": 5,
                 "ammo_reserve": 30,
                 "state": "active"
-            },
-            "weapon_3": {
-                "name": "weapon_hegrenade",
-                "paintkit": "default",
-                "type": "Grenade",
-                "ammo_reserve": 1,
-                "state": "holstered"
-            },
-            "weapon_4": {
-                "name": "weapon_smokegrenade",
-                "paintkit": "default",
-                "type": "Grenade",
-                "ammo_reserve": 1,
-                "state": "holstered"
             }
         },
         "state": {
-            "health": 100,
-            "armor": 100,
+            "health": 78,
+            "armor": 88,
             "helmet": true,
             "flashed": 0,
             "smoked": 0,
             "burning": 0,
-            "money": 3650,
-            "round_kills": 3,
+            "money": 7200,
+            "round_kills": 4,
             "round_killhs": 0,
-            "round_totaldmg": 300,
-            "equip_value": 6550
+            "round_totaldmg": 369,
+            "equip_value": 7150
         },
-        "steamid": "76561197997147712",
-        "clan": "XO eSports ",
-        "name": "OSCAR",
-        "observer_slot": 1,
+        "steamid": "76561198209361951",
+        "clan": "HLS GAME",
+        "name": "诠释神之意识",
+        "observer_slot": 5,
         "team": "T",
-        "activity": "menu"
+        "activity": "playing"
     },
-    "grenades": {
-        "195": {
-            "owner": "76561197997147712",
-            "position": "985.84, 219.56, -186.66",
-            "velocity": "0.00, 0.00, 0.00",
-            "lifetime": "19.2",
-            "type": "decoy",
-            "effecttime": "16.7"
-        },
-        "326": {
-            "owner": "76561197997147712",
-            "position": "1028.94, 2269.78, -37.97",
-            "velocity": "0.00, 0.00, 0.00",
-            "lifetime": "20.9",
-            "type": "smoke",
-            "effecttime": "17.5"
-        },
-        "124": {
-            "owner": "76561198366635943",
-            "position": "-959.78, 1106.78, 37.03",
-            "velocity": "0.00, 0.00, 0.00",
-            "lifetime": "6.3",
-            "type": "smoke",
-            "effecttime": "4.8"
-        }
-    },
+    "grenades": {},
     "allplayers": {
-        "76561198329534030": {
-            "clan": "ATOX E-sports ",
-            "name": "AccuracyTG",
-            "observer_slot": 5,
+        "76561199177462852": {
+            "clan": "开chuang",
+            "name": "2685289060",
+            "observer_slot": 0,
             "team": "CT",
             "match_stats": {
-                "kills": 13,
-                "assists": 9,
-                "deaths": 17,
-                "mvps": 1,
-                "score": 38
+                "kills": 6,
+                "assists": 6,
+                "deaths": 18,
+                "mvps": 0,
+                "score": 19
             },
-            "position": "-1317.06, 986.26, 0.03",
-            "forward": "0.11, -0.99, 0.00",
+            "position": "-542.14, -654.50, -273.13",
+            "forward": "-0.50, -0.86, 0.03",
             "state": {
                 "health": 0,
                 "armor": 0,
@@ -184,105 +149,51 @@
                 "flashed": 0,
                 "smoked": 0,
                 "burning": 0,
-                "money": 1400,
+                "money": 1950,
                 "round_kills": 0,
                 "round_killhs": 0,
                 "round_totaldmg": 0,
-                "equip_value": 0
+                "equip_value": 6650
             },
             "weapons": {}
         },
-        "76561198366635943": {
-            "clan": "XO eSports ",
-            "name": "Polbandana",
-            "observer_slot": 0,
+        "76561198209361951": {
+            "clan": "HLS GAME",
+            "name": "诠释神之意识",
+            "observer_slot": 5,
             "team": "T",
             "match_stats": {
-                "kills": 19,
-                "assists": 6,
-                "deaths": 12,
-                "mvps": 1,
-                "score": 48
-            },
-            "position": "-770.98, 624.29, 38.72",
-            "forward": "-0.75, 0.66, -0.06",
-            "state": {
-                "health": 73,
-                "armor": 97,
-                "helmet": true,
-                "flashed": 0,
-                "smoked": 0,
-                "burning": 0,
-                "money": 4550,
-                "round_kills": 1,
-                "round_killhs": 1,
-                "round_totaldmg": 100,
-                "equip_value": 4200
-            },
-            "weapons": {
-                "weapon_0": {
-                    "name": "weapon_knife_butterfly",
-                    "paintkit": "aq_damascus_90",
-                    "type": "Knife",
-                    "state": "holstered"
-                },
-                "weapon_1": {
-                    "name": "weapon_glock",
-                    "paintkit": "cu_glock_eyecontact",
-                    "type": "Pistol",
-                    "ammo_clip": 20,
-                    "ammo_clip_max": 20,
-                    "ammo_reserve": 120,
-                    "state": "holstered"
-                },
-                "weapon_2": {
-                    "name": "weapon_ak47",
-                    "paintkit": "cu_ak47_winter_sport",
-                    "type": "Rifle",
-                    "ammo_clip": 22,
-                    "ammo_clip_max": 30,
-                    "ammo_reserve": 79,
-                    "state": "active"
-                }
-            }
-        },
-        "76561197997147712": {
-            "clan": "XO eSports ",
-            "name": "OSCAR",
-            "observer_slot": 1,
-            "team": "T",
-            "match_stats": {
-                "kills": 21,
-                "assists": 0,
+                "kills": 29,
+                "assists": 3,
                 "deaths": 14,
                 "mvps": 4,
-                "score": 52
+                "score": 61
             },
-            "position": "-985.49, 262.06, -22.97",
-            "forward": "-0.41, 0.91, 0.01",
+            "position": "444.61, -501.23, -159.97",
+            "forward": "-0.98, -0.15, -0.12",
             "state": {
-                "health": 100,
-                "armor": 100,
+                "health": 78,
+                "armor": 88,
                 "helmet": true,
                 "flashed": 0,
                 "smoked": 0,
                 "burning": 0,
-                "money": 3650,
-                "round_kills": 3,
+                "money": 7200,
+                "round_kills": 4,
                 "round_killhs": 0,
-                "round_totaldmg": 300,
-                "equip_value": 6550
+                "round_totaldmg": 369,
+                "equip_value": 7150
             },
             "weapons": {
                 "weapon_0": {
-                    "name": "weapon_knife_m9_bayonet",
-                    "paintkit": "am_gamma_doppler_phase3",
+                    "name": "weapon_knife_karambit",
+                    "paintkit": "am_sapphire_marbleized",
                     "type": "Knife",
                     "state": "holstered"
                 },
                 "weapon_1": {
                     "name": "weapon_glock",
-                    "paintkit": "aq_glock18_flames_blue",
+                    "paintkit": "so_red",
                     "type": "Pistol",
                     "ammo_clip": 20,
                     "ammo_clip_max": 20,
@@ -290,163 +201,37 @@
                     "state": "holstered"
                 },
                 "weapon_2": {
+                    "name": "weapon_molotov",
+                    "paintkit": "default",
+                    "type": "Grenade",
+                    "ammo_reserve": 1,
+                    "state": "holstered"
+                },
+                "weapon_3": {
                     "name": "weapon_awp",
-                    "paintkit": "hy_zodiac2",
+                    "paintkit": "cu_awp_asimov",
                     "type": "SniperRifle",
-                    "ammo_clip": 2,
+                    "ammo_clip": 0,
                     "ammo_clip_max": 5,
                     "ammo_reserve": 30,
                     "state": "active"
-                },
-                "weapon_3": {
-                    "name": "weapon_hegrenade",
-                    "paintkit": "default",
-                    "type": "Grenade",
-                    "ammo_reserve": 1,
-                    "state": "holstered"
-                },
-                "weapon_4": {
-                    "name": "weapon_smokegrenade",
-                    "paintkit": "default",
-                    "type": "Grenade",
-                    "ammo_reserve": 1,
-                    "state": "holstered"
                 }
             }
         },
-        "76561198120157641": {
-            "clan": "ATOX E-sports ",
-            "name": "dobu",
+        "76561199236393134": {
+            "clan": "HLS GAME",
+            "name": "蛋仔派对高手666",
             "observer_slot": 6,
-            "team": "CT",
-            "match_stats": {
-                "kills": 11,
-                "assists": 5,
-                "deaths": 17,
-                "mvps": 1,
-                "score": 34
-            },
-            "position": "-1317.06, 986.26, 0.03",
-            "forward": "0.60, -0.80, -0.01",
-            "state": {
-                "health": 0,
-                "armor": 0,
-                "helmet": false,
-                "flashed": 0,
-                "smoked": 0,
-                "burning": 0,
-                "money": 3650,
-                "round_kills": 0,
-                "round_killhs": 0,
-                "round_totaldmg": 0,
-                "equip_value": 6300
-            },
-            "weapons": {}
-        },
-        "76561199623794881": {
-            "clan": "XO eSports ",
-            "name": "b1lal",
-            "observer_slot": 2,
-            "team": "T",
-            "match_stats": {
-                "kills": 18,
-                "assists": 4,
-                "deaths": 12,
-                "mvps": 2,
-                "score": 46
-            },
-            "position": "-1014.43, 598.37, -1.97",
-            "forward": "-0.32, 0.95, -0.04",
-            "state": {
-                "health": 100,
-                "armor": 100,
-                "helmet": true,
-                "flashed": 0,
-                "smoked": 0,
-                "burning": 0,
-                "money": 3650,
-                "round_kills": 0,
-                "round_killhs": 0,
-                "round_totaldmg": 0,
-                "equip_value": 4500
-            },
-            "weapons": {
-                "weapon_0": {
-                    "name": "weapon_knife_butterfly",
-                    "paintkit": "am_emerald_marbleized",
-                    "type": "Knife",
-                    "state": "holstered"
-                },
-                "weapon_1": {
-                    "name": "weapon_glock",
-                    "paintkit": "glock_brick_mondrian",
-                    "type": "Pistol",
-                    "ammo_clip": 20,
-                    "ammo_clip_max": 20,
-                    "ammo_reserve": 120,
-                    "state": "holstered"
-                },
-                "weapon_2": {
-                    "name": "weapon_ak47",
-                    "paintkit": "ak47_t_bus",
-                    "type": "Rifle",
-                    "ammo_clip": 25,
-                    "ammo_clip_max": 30,
-                    "ammo_reserve": 90,
-                    "state": "active"
-                },
-                "weapon_3": {
-                    "name": "weapon_flashbang",
-                    "paintkit": "default",
-                    "type": "Grenade",
-                    "ammo_reserve": 1,
-                    "state": "holstered"
-                }
-            }
-        },
-        "76561198874507220": {
-            "clan": "ATOX E-sports ",
-            "name": "MiQ",
-            "observer_slot": 7,
-            "team": "CT",
-            "match_stats": {
-                "kills": 10,
-                "assists": 4,
-                "deaths": 18,
-                "mvps": 3,
-                "score": 35
-            },
-            "position": "-1317.06, 986.26, 0.03",
-            "forward": "-0.01, -1.00, -0.01",
-            "state": {
-                "health": 0,
-                "armor": 0,
-                "helmet": false,
-                "flashed": 0,
-                "smoked": 0,
-                "burning": 0,
-                "money": 3150,
-                "round_kills": 0,
-                "round_killhs": 0,
-                "round_totaldmg": 0,
-                "equip_value": 0
-            },
-            "weapons": {}
-        },
-        "76561199030058795": {
-            "clan": "XO eSports ",
-            "name": "dodZ",
-            "observer_slot": 3,
             "team": "T",
             "match_stats": {
                 "kills": 15,
                 "assists": 6,
-                "deaths": 13,
-                "mvps": 3,
-                "score": 39
+                "deaths": 15,
+                "mvps": 1,
+                "score": 42
             },
-            "position": "-1014.43, 598.37, -1.97",
-            "forward": "-0.44, -0.89, -0.04",
+            "position": "444.61, -501.23, -159.97",
+            "forward": "0.95, 0.30, -0.12",
             "state": {
                 "health": 0,
                 "armor": 0,
@@ -454,7 +239,36 @@
                 "flashed": 0,
                 "smoked": 0,
                 "burning": 0,
-                "money": 3750,
+                "money": 6600,
+                "round_kills": 1,
+                "round_killhs": 1,
+                "round_totaldmg": 100,
+                "equip_value": 0
+            },
+            "weapons": {}
+        },
+        "76561199048660858": {
+            "clan": "HLS GAME",
+            "name": "DyinBzxd",
+            "observer_slot": 7,
+            "team": "T",
+            "match_stats": {
+                "kills": 17,
+                "assists": 7,
+                "deaths": 16,
+                "mvps": 3,
+                "score": 42
+            },
+            "position": "444.61, -501.23, -159.97",
+            "forward": "0.95, 0.30, -0.12",
+            "state": {
+                "health": 0,
+                "armor": 0,
+                "helmet": false,
+                "flashed": 0,
+                "smoked": 0,
+                "burning": 0,
+                "money": 3400,
                 "round_kills": 0,
                 "round_killhs": 0,
                 "round_totaldmg": 0,
@@ -462,20 +276,107 @@
             },
             "weapons": {}
         },
-        "76561198121512116": {
-            "clan": "ATOX E-sports ",
-            "name": "KABAL",
-            "observer_slot": 8,
+        "76561199212623241": {
+            "clan": "开chuang",
+            "name": "孟伟king",
+            "observer_slot": 1,
             "team": "CT",
             "match_stats": {
-                "kills": 12,
+                "kills": 10,
+                "assists": 6,
+                "deaths": 17,
+                "mvps": 1,
+                "score": 25
+            },
+            "position": "-542.14, -654.50, -273.13",
+            "forward": "-0.99, -0.11, 0.03",
+            "state": {
+                "health": 0,
+                "armor": 0,
+                "helmet": false,
+                "flashed": 0,
+                "smoked": 0,
+                "burning": 0,
+                "money": 2650,
+                "round_kills": 2,
+                "round_killhs": 2,
+                "round_totaldmg": 153,
+                "equip_value": 0
+            },
+            "weapons": {}
+        },
+        "76561199190306012": {
+            "clan": "开chuang",
+            "name": "ozzzawa",
+            "observer_slot": 2,
+            "team": "CT",
+            "match_stats": {
+                "kills": 23,
+                "assists": 2,
+                "deaths": 15,
+                "mvps": 5,
+                "score": 54
+            },
+            "position": "-542.14, -654.50, -273.13",
+            "forward": "-0.99, -0.11, 0.03",
+            "state": {
+                "health": 0,
+                "armor": 0,
+                "helmet": false,
+                "flashed": 0,
+                "smoked": 0,
+                "burning": 0,
+                "money": 4050,
+                "round_kills": 0,
+                "round_killhs": 0,
+                "round_totaldmg": 0,
+                "equip_value": 0
+            },
+            "weapons": {}
+        },
+        "76561199060312912": {
+            "clan": "开chuang",
+            "name": "极其没有素质",
+            "observer_slot": 3,
+            "team": "CT",
+            "match_stats": {
+                "kills": 6,
                 "assists": 4,
-                "deaths": 19,
+                "deaths": 18,
+                "mvps": 0,
+                "score": 16
+            },
+            "position": "-542.14, -654.50, -273.13",
+            "forward": "-0.99, -0.11, 0.03",
+            "state": {
+                "health": 0,
+                "armor": 0,
+                "helmet": false,
+                "flashed": 0,
+                "smoked": 0,
+                "burning": 0,
+                "money": 1950,
+                "round_kills": 0,
+                "round_killhs": 0,
+                "round_totaldmg": 61,
+                "equip_value": 0
+            },
+            "weapons": {}
+        },
+        "76561199036261995": {
+            "clan": "开chuang",
+            "name": "得吃大王",
+            "observer_slot": 4,
+            "team": "CT",
+            "match_stats": {
+                "kills": 15,
+                "assists": 2,
+                "deaths": 17,
                 "mvps": 2,
                 "score": 32
             },
-            "position": "-1317.06, 986.26, 0.03",
-            "forward": "-0.01, -1.00, -0.01",
+            "position": "-542.14, -654.50, -273.13",
+            "forward": "-0.99, -0.11, 0.03",
             "state": {
                 "health": 0,
                 "armor": 0,
@@ -483,96 +384,42 @@
                 "flashed": 0,
                 "smoked": 0,
                 "burning": 0,
-                "money": 1450,
+                "money": 2500,
+                "round_kills": 1,
+                "round_killhs": 0,
+                "round_totaldmg": 100,
+                "equip_value": 0
+            },
+            "weapons": {}
+        },
+        "76561198162884872": {
+            "clan": "HLS GAME",
+            "name": "摆渡Ferry",
+            "observer_slot": 8,
+            "team": "T",
+            "match_stats": {
+                "kills": 22,
+                "assists": 8,
+                "deaths": 15,
+                "mvps": 5,
+                "score": 50
+            },
+            "position": "444.61, -501.23, -159.97",
+            "forward": "0.95, 0.30, -0.12",
+            "state": {
+                "health": 0,
+                "armor": 0,
+                "helmet": false,
+                "flashed": 0,
+                "smoked": 0,
+                "burning": 0,
+                "money": 4400,
                 "round_kills": 0,
                 "round_killhs": 0,
                 "round_totaldmg": 0,
                 "equip_value": 0
             },
             "weapons": {}
-        },
-        "76561198933051364": {
-            "clan": "ATOX E-sports ",
-            "name": "zesta",
-            "observer_slot": 9,
-            "team": "CT",
-            "match_stats": {
-                "kills": 16,
-                "assists": 3,
-                "deaths": 18,
-                "mvps": 3,
-                "score": 37
-            },
-            "position": "-1317.06, 986.26, 0.03",
-            "forward": "-0.01, -1.00, -0.01",
-            "state": {
-                "health": 0,
-                "armor": 0,
-                "helmet": false,
-                "flashed": 0,
-                "smoked": 0,
-                "burning": 0,
-                "money": 3900,
-                "round_kills": 1,
-                "round_killhs": 0,
-                "round_totaldmg": 127,
-                "equip_value": 0
-            },
-            "weapons": {}
-        },
-        "76561199024583803": {
-            "clan": "XO eSports ",
-            "name": "0SAMAS",
-            "observer_slot": 4,
-            "team": "T",
-            "match_stats": {
-                "kills": 16,
-                "assists": 7,
-                "deaths": 12,
-                "mvps": 3,
-                "score": 39
-            },
-            "position": "-1430.33, 80.04, 0.03",
-            "forward": "0.26, 0.96, 0.07",
-            "state": {
-                "health": 100,
-                "armor": 100,
-                "helmet": true,
-                "flashed": 0,
-                "smoked": 0,
-                "burning": 0,
-                "money": 3550,
-                "round_kills": 1,
-                "round_killhs": 0,
-                "round_totaldmg": 100,
-                "equip_value": 4800
-            },
-            "weapons": {
-                "weapon_0": {
-                    "name": "weapon_knife_m9_bayonet",
-                    "paintkit": "am_doppler_phase4",
-                    "type": "Knife",
-                    "state": "holstered"
-                },
-                "weapon_1": {
-                    "name": "weapon_glock",
-                    "paintkit": "cu_glock_ramzes",
-                    "type": "Pistol",
-                    "ammo_clip": 20,
-                    "ammo_clip_max": 20,
-                    "ammo_reserve": 120,
-                    "state": "holstered"
-                },
-                "weapon_2": {
-                    "name": "weapon_ak47",
-                    "paintkit": "cu_ak47_nightwish",
-                    "type": "Rifle",
-                    "ammo_clip": 18,
-                    "ammo_clip_max": 30,
-                    "ammo_reserve": 81,
-                    "state": "active"
-                }
-            }
         }
     },
     "auth": {

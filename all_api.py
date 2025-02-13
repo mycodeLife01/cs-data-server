@@ -8,6 +8,7 @@ import json
 import requests
 import os
 from flask_cors import CORS
+from sqlalchemy import and_
 
 import xml.etree.ElementTree as ET
 from decimal import Decimal
@@ -55,8 +56,8 @@ def scores():
     # global left_team, right_team
     ###测试
     # res = {'left': 0, 'right': '0'}
-    res = {'left': 8, 'right': 7, 'left_team': left_team_long, 'right_team': right_team_long}
-    return jsonify({"msg": "请求成功", "data": res})
+    # res = {'left': 8, 'right': 7, 'left_team': left_team_long, 'right_team': right_team_long}
+    # return jsonify({"msg": "请求成功", "data": res})
     global global_json
     try:
         score_data_ct = global_json["map"]["team_ct"]
@@ -67,7 +68,12 @@ def scores():
             score_data_ct["name"].strip(): score_data_ct["score"],
             score_data_t["name"].strip(): score_data_t["score"],
         }
-        res = {"left": score_data[left_team_long], "right": score_data[right_team_long]}
+        res = {
+            "left": score_data[left_team_long],
+            "right": score_data[right_team_long],
+            "left_team": left_team_long,
+            "right_team": right_team_long,
+        }
         return jsonify({"msg": "请求成功", "data": res})
 
     except Exception as e:
@@ -138,7 +144,7 @@ def parse_scoreboard():
                 )
         res["left_team"].sort(key=lambda a: a["ADR"], reverse=True)
         res["right_team"].sort(key=lambda a: a["ADR"], reverse=True)
-
+        # print("---------------------------------scoreboard--------------------", res)
         return res
 
     except Exception as e:
@@ -178,19 +184,95 @@ def setMvp():
 # mvp赛后接口
 @app.route("/mvp")
 def mvp():
-    board = parse_scoreboard()
+    # board = parse_scoreboard()
+    # for player in board["left_team"]:
+    #     if player["player_name"] == mvp_player:
+    #         return jsonify({"msg": "请求成功", "data": player})
 
-    for player in board["left_team"]:
-        if player["player_name"] == mvp_player:
-            return jsonify({"msg": "请求成功", "data": player})
+    # for player in board["right_team"]:
+    #     if player["player_name"] == mvp_player:
+    #         return jsonify({"msg": "请求成功", "data": player})
 
-    for player in board["right_team"]:
-        if player["player_name"] == mvp_player:
-            return jsonify({"msg": "请求成功", "data": player})
+    Session = sessionmaker(bind=ENGINELocal, autocommit=False)
+    session = Session()
+    try:
+        match_code = (
+            session.query(GameList.match_code)
+            .order_by(GameList.create_time.desc())
+            .first()[0]
+        )
+        mvp = (
+            session.query(DataGame)
+            .filter(DataGame.match_code == match_code)
+            .order_by(DataGame.rating.desc())
+            .first()
+        )
+        mvp_info = {
+            "player_name": mvp.player_name,
+            "kills": mvp.kills,
+            "deaths": mvp.deaths,
+            "assists": mvp.assists,
+            "headshotratio": float(mvp.headshotratio),
+            "adr": mvp.adr,
+            "firstkill": mvp.firstkill,
+            "firstdeath": mvp.firstdeath,
+            "sniperkills": mvp.sniperkills,
+            "muitikills": mvp.muitikills,
+            "utilitydmg": mvp.utilitydmg,
+            "kast": float(mvp.kast),
+            "rating": float(mvp.rating),
+        }
+        print(mvp.player_name)
+        return jsonify({"msg": "请求成功", "data": mvp_info})
+    except Exception as e:
+        print(f"发生异常：{e}, 在第{e.__traceback__.tb_lineno}行")
+        return jsonify(
+            {"msg": "请求失败", "data": {}, "description": "未查询到匹配的选手！"}
+        )
 
-    return jsonify(
-        {"msg": "请求失败", "data": {}, "description": "未查询到匹配的选手！"}
-    )
+
+# 手选mvp接口
+app.route("/selectedMVP")
+def selectedMVP():
+    try:
+        match_code = (
+            session.query(GameList.match_code)
+            .order_by(GameList.create_time.desc())
+            .first()[0]
+        )
+        mvp = (
+            session.query(DataGame)
+            .filter(
+                and_(
+                    DataGame.player_name == mvp_player,
+                    DataGame.match_code == match_code,
+                )
+            )
+            .order_by(DataGame.rating.desc())
+            .first()
+        )
+        mvp_info = {
+            "player_name": mvp.player_name,
+            "kills": mvp.kills,
+            "deaths": mvp.deaths,
+            "assists": mvp.assists,
+            "headshotratio": float(mvp.headshotratio),
+            "adr": mvp.adr,
+            "firstkill": mvp.firstkill,
+            "firstdeath": mvp.firstdeath,
+            "sniperkills": mvp.sniperkills,
+            "muitikills": mvp.muitikills,
+            "utilitydmg": mvp.utilitydmg,
+            "kast": float(mvp.kast),
+            "rating": float(mvp.rating),
+        }
+        print(mvp.player_name)
+        return jsonify({"msg": "请求成功", "data": mvp_info})
+    except Exception as e:
+        print(f"发生异常：{e}, 在第{e.__traceback__.tb_lineno}行")
+        return jsonify(
+            {"msg": "请求失败", "data": {}, "description": "未查询到匹配的选手！"}
+        )
 
 
 # 存赛后数据

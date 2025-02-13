@@ -26,7 +26,11 @@ left_win = "http://192.168.15.235:8000/api/location/2/0/3/press"
 right_win = "http://192.168.15.235:8000/api/location/2/1/3/press"
 
 phase_off = ["timeout_ct", "timeout_t", "paused", "freezetime"]
+phase_music_off = []
 C4_OFF = False
+
+last_phase = ""
+over_count = 0
 
 # 读取赛前预录选手信息，包括选手名，战队名和舞台位置
 player_info_json = "player_info.json"
@@ -35,7 +39,7 @@ with open(player_info_json, "r", encoding="utf-8") as f:
 
 # 获取全称
 left_team = player_info["teams"]["left"]
-right_team = player_info["teams"]["right"]
+right_team = player_info["teams"]["right"]  
 
 
 def initalizeRound():
@@ -108,8 +112,11 @@ def checkGlobalData():
 
 
 def sendEventMsg():
-    global previous_bomb_state, isFirstPlanted, current_bomb_state, C4_OFF
+    global previous_bomb_state, isFirstPlanted, current_bomb_state, C4_OFF, last_phase, over_count
     phase = global_data.data["round"]["phase"]
+    round = global_data.data["map"]["round"]
+    map_phase = global_data.data["map"]["phase"]
+    # print(round)
     if is_initalize:
         bomb_state = global_data.bomb_state
         # print(bomb_state)
@@ -134,15 +141,36 @@ def sendEventMsg():
         # 其他情况都不发送请求
 
         previous_bomb_state = current_bomb_state
-    if global_data.data["phase_countdowns"]["phase"] in phase_off and not C4_OFF:
+        
+    phase_flag = global_data.data["phase_countdowns"]["phase"]
+    
+    # print(phase_flag)
+    # seconds = global_data.data["phase_countdowns"]["phase_ends_in"]
+    # print(seconds)
+    # print(f"当前的phase是:{phase_flag}")
+    if phase_flag in phase_off and not C4_OFF:
         # C4 ALL OFF
         # requests.post(c4_all_off)
         C4_OFF = True
         print("C4 ALL OFF!!!!!!!!!!")
-    elif global_data.data["phase_countdowns"]["phase"] == 'paused':
+    elif phase_flag in ("timeout_ct", "timeout_t", "paused") and phase_flag != last_phase and round != 12:
         print('播放暂停音乐')
-    elif global_data.data["phase_countdowns"]["phase"] == "live":
+    elif phase_flag == "over" and round == 12 and phase_flag != last_phase:
+        print("播放暂停音乐2")
+    # elif phase_flag == 'freezetime' and last_phase in ("timeout_ct", "timeout_t", "paused"):
+    #     print('播放暂停音乐')
+    # elif phase_flag == 'freezetime' and last_phase in ("timeout_ct", "timeout_t", "paused") and seconds in ("3.9","3.8","3.7","3.6","3.5","3.4","3.3","3.2","3.1","3.0"):
+    #     print('关闭暂停音乐')
+    elif phase_flag == "live" and last_phase == "freezetime":
+        print('关闭暂停音乐')
+    elif map_phase == "gameover" and over_count==0:
+        print("播放结束音乐")
+        # print(over_count)
+        over_count += 1
+    elif phase_flag == "live":
         C4_OFF = False
+    last_phase = phase_flag
+    # print(f"已更新上个phase为:{last_phase}")
 
 
 def save_round_data():
@@ -181,7 +209,7 @@ def backgroundProcess():
         try:
             time = datetime.now()
             checkGlobalData()
-            # sendEventMsg()
+            sendEventMsg()
             save_round_data()
         except Exception as e:
             with open("error.txt", "a", encoding="utf-8") as errorfile:
@@ -271,6 +299,12 @@ def scores():
             score_data_t["name"].strip(): score_data_t["score"],
         }
         res = {'left': score_data[left_team], 'right': score_data[right_team], 'left_team': left_team, 'right_team': right_team}
+        
+        if res['left_team'] == '开chuang':
+            res['left_team'] = 'chuang'
+        if res['right_team'] == '开chuang':
+            res['right_team'] = 'chuang'
+
         return jsonify({"msg": "请求成功", "data": res})
 
     except Exception as e:
@@ -372,4 +406,4 @@ if __name__ == "__main__":
     thread = threading.Thread(target=backgroundProcess)
     thread.daemon = True
     thread.start()
-    app.run(host="0.0.0.0", port=1234, debug=False)
+    # app.run(host="0.0.0.0", port=1234, debug=False)

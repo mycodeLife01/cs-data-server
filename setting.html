@@ -66,11 +66,12 @@
         <div v-if="mvpCard" class="card mvp-card">
           <h2>MVP 选手信息</h2>
           <p><strong>姓名：</strong> {{ mvpCard.player_name }}</p>
-          <p><strong>队伍：</strong> {{ mvpCard.team_name }}</p>
-          <p><strong>座位号：</strong> {{ mvpCard.seat }}</p>
-          <p><strong>K/D：</strong> {{ mvpCard.KD }} (K: {{ mvpCard.K }}, D: {{ mvpCard.D }})</p>
-          <p><strong>A：</strong> {{ mvpCard.A }}</p>
-          <p><strong>ADR：</strong> {{ mvpCard.ADR }}</p>
+          <!-- <p><strong>队伍：</strong> {{ mvpCard.team_name }}</p>
+          <p><strong>座位号：</strong> {{ mvpCard.seat }}</p> -->
+          <p><strong>kills</strong> {{ mvpCard.kills }}</p>
+          <p><strong>deaths:</strong> {{ mvpCard.deaths }}</p>
+          <p><strong>assists</strong> {{ mvpCard.assists }}</p>
+          <p><strong>adr</strong> {{ mvpCard.adr }}</p>
         </div>
       </transition>
     </div>
