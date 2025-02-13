@@ -1,0 +1,59 @@
+{
+    "player":{
+        "76561198824710349":{
+            "player_name": "Prokiller",
+            "team_name": "NKG",
+            "player_seat": 1
+        },
+        "76561198188589818":{
+            "player_name": "L2ssssss",
+            "team_name": "NKG",
+            "player_seat": 2
+        },
+        "76561198368623262":{
+            "player_name": "小Karrigan",
+            "team_name": "NKG",
+            "player_seat": 3
+        },
+        "76561198407952197":{
+            "player_name": "Toxic",
+            "team_name": "NKG",
+            "player_seat": 4
+        },
+        "76561198317992990":{
+            "player_name": "Ocean",
+            "team_name": "NKG",
+            "player_seat": 5
+            
+        },
+        "76561198422389693":{
+            "player_name": "m1n1",
+            "team_name": "JJH",
+            "player_seat": 6
+        },
+        "76561198260959350":{
+            "player_name": "dennyslaw",
+            "team_name": "JJH",
+            "player_seat": 7
+        },
+        "76561198056206009":{
+            "player_name": "Aaron",
+            "team_name": "JJH",
+            "player_seat": 8
+        },
+        "76561198037812456":{
+            "player_name": "ISSAA",
+            "team_name": "JJH",
+            "player_seat": 9
+        },
+        "76561198110839613":{
+            "player_name": "bibu",
+            "team_name": "JJH",
+            "player_seat": 10
+        }
+    },
+    "teams":{
+        "left": "Nalakuvara",
+        "right": "JiJieHao"
+    }
+}

@@ -1,0 +1,59 @@
+{
+    "player":{
+        "76561198121512116":{
+            "player_name": "KABAL",
+            "team_name": "ATOX",
+            "player_seat": 1
+        },
+        "76561198874507220":{
+            "player_name": "MiQ",
+            "team_name": "ATOX",
+            "player_seat": 2
+        },
+        "76561198120157641":{
+            "player_name": "dobu",
+            "team_name": "ATOX",
+            "player_seat": 3
+        },
+        "76561198329534030":{
+            "player_name": "AccuracyTG",
+            "team_name": "ATOX",
+            "player_seat": 4
+        },
+        "76561198933051364":{
+            "player_name": "zesta",
+            "team_name": "ATOX",
+            "player_seat": 5
+            
+        },
+        "76561198436059245":{
+            "player_name": "ParkJJong",
+            "team_name": "Miracle",
+            "player_seat": 6
+        },
+        "76561198078298307":{
+            "player_name": "Ail",
+            "team_name": "Miracle",
+            "player_seat": 7
+        },
+        "76561198001244543":{
+            "player_name": "10X",
+            "team_name": "Miracle",
+            "player_seat": 8
+        },
+        "76561198987201872":{
+            "player_name": "sti",
+            "team_name": "Miracle",
+            "player_seat": 9
+        },
+        "76561198312078017":{
+            "player_name": "Jez",
+            "team_name": "Miracle",
+            "player_seat": 10
+        }
+    },
+    "teams":{
+        "left": "ATOX E-sports",
+        "right": "Miracle Play"
+    }
+}

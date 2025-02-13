@@ -1,0 +1,59 @@
+{
+    "player":{
+        "76561198018211001":{
+            "player_name": "w1nt3r",
+            "team_name": "d[s]",
+            "player_seat": 1
+        },
+        "76561198045423728":{
+            "player_name": "Kuma",
+            "team_name": "d[s]",
+            "player_seat": 2
+        },
+        "76561198094954668":{
+            "player_name": "ImpressioN",
+            "team_name": "d[s]",
+            "player_seat": 3
+        },
+        "76561197960309328":{
+            "player_name": "splashske",
+            "team_name": "d[s]",
+            "player_seat": 4
+        },
+        "76561198135502179":{
+            "player_name": "Inzane",
+            "team_name": "d[s]",
+            "player_seat": 5
+            
+        },
+        "76561198429734322":{
+            "player_name": "ariucle",
+            "team_name": "CW",
+            "player_seat": 6
+        },
+        "76561199247418620":{
+            "player_name": "efire",
+            "team_name": "CW",
+            "player_seat": 7
+        },
+        "76561198074388537":{
+            "player_name": "NEUZ",
+            "team_name": "CW",
+            "player_seat": 8
+        },
+        "76561198937352870":{
+            "player_name": "ROUX",
+            "team_name": "CW",
+            "player_seat": 9
+        },
+        "76561198362438171":{
+            "player_name": "controlez",
+            "team_name": "CW",
+            "player_seat": 10
+        }
+    },
+    "teams":{
+        "left": "dreamScape",
+        "right": "Chinggis Warriors"
+    }
+}

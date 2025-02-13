@@ -1,0 +1,59 @@
+{
+    "player":{
+        "76561198419153368":{
+            "player_name": "pms",
+            "team_name": "BW",
+            "player_seat": 1
+        },
+        "76561199533757269":{
+            "player_name": "melu",
+            "team_name": "BW",
+            "player_seat": 2
+        },
+        "76561199700718561":{
+            "player_name": "ryu",
+            "team_name": "BW",
+            "player_seat": 3
+        },
+        "76561199590778360":{
+            "player_name": "Baby4",
+            "team_name": "BW",
+            "player_seat": 4
+        },
+        "76561199062311107":{
+            "player_name": "Kingzlo",
+            "team_name": "BW",
+            "player_seat": 5
+            
+        },
+        "76561198079650009":{
+            "player_name": "Geniuss",
+            "team_name": "ROG",
+            "player_seat": 6
+        },
+        "76561198120667588":{
+            "player_name": "ROLEX",
+            "team_name": "ROG",
+            "player_seat": 7
+        },
+        "76561198068457883":{
+            "player_name": "MAIROLLS",
+            "team_name": "ROG",
+            "player_seat": 8
+        },
+        "76561198138757622":{
+            "player_name": "SeveN89",
+            "team_name": "ROG",
+            "player_seat": 9
+        },
+        "76561198130238766":{
+            "player_name": "BoonRywin",
+            "team_name": "ROG",
+            "player_seat": 10
+        }
+    },
+    "teams":{
+        "left": "Blaze Warriors",
+        "right": "Real Original Gaming"
+    }
+}

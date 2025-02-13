@@ -1,0 +1,58 @@
+{
+    "player":{
+        "76561198121512116":{
+            "player_name": "KABAL",
+            "team_name": "ATOX",
+            "player_seat": 1
+        },
+        "76561198874507220":{
+            "player_name": "MiQ",
+            "team_name": "ATOX",
+            "player_seat": 2
+        },
+        "76561198120157641":{
+            "player_name": "dobu",
+            "team_name": "ATOX",
+            "player_seat": 3
+        },
+        "76561198329534030":{
+            "player_name": "AccuracyTG",
+            "team_name": "ATOX",
+            "player_seat": 4
+        },
+        "76561198933051364":{
+            "player_name": "zesta",
+            "team_name": "ATOX",
+            "player_seat": 5
+        },
+        "76561199030058795":{
+            "player_name": "dodZ",
+            "team_name": "XO eSports",
+            "player_seat": 6
+        },
+        "76561199623794881":{
+            "player_name": "B1lal",
+            "team_name": "XO eSports",
+            "player_seat": 7
+        },
+        "76561197997147712":{
+            "player_name": "OSCAR",
+            "team_name": "XO eSports",
+            "player_seat": 8
+        },
+        "76561199024583803":{
+            "player_name": "0SAMAS",
+            "team_name": "XO eSports",
+            "player_seat": 9
+        },
+        "76561198366635943":{
+            "player_name": "Polbandana",
+            "team_name": "XO eSports",
+            "player_seat": 10
+        }
+    },
+    "teams":{
+        "left": "ATOX E-sports",
+        "right": "XO eSports"
+    }
+}

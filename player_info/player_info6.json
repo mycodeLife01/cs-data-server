@@ -1,0 +1,59 @@
+{
+    "player":{
+        "76561198402322152":{
+            "player_name": "rate",
+            "team_name": "IHC",
+            "player_seat": 1
+        },
+        "76561198842848216":{
+            "player_name": "cool4st",
+            "team_name": "IHC",
+            "player_seat": 2
+        },
+        "76561198135998371":{
+            "player_name": "yami",
+            "team_name": "IHC",
+            "player_seat": 3
+        },
+        "76561199065720634":{
+            "player_name": "me1o",
+            "team_name": "IHC",
+            "player_seat": 4
+        },
+        "76561198980167844":{
+            "player_name": "Clouden",
+            "team_name": "IHC",
+            "player_seat": 5
+            
+        },
+        "76561198146393562":{
+            "player_name": "estelle",
+            "team_name": "Oni",
+            "player_seat": 6
+        },
+        "76561199086490812":{
+            "player_name": "jonger",
+            "team_name": "Oni",
+            "player_seat": 7
+        },
+        "76561198353605105":{
+            "player_name": "chinits",
+            "team_name": "Oni",
+            "player_seat": 8
+        },
+        "76561198997984819":{
+            "player_name": "clyd1e",
+            "team_name": "Oni",
+            "player_seat": 9
+        },
+        "76561198214113331":{
+            "player_name": "jaytzy",
+            "team_name": "Oni",
+            "player_seat": 10
+        }
+    },
+    "teams":{
+        "left": "IHC Esports",
+        "right": "Oni Clan"
+    }
+}

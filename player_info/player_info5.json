@@ -1,0 +1,59 @@
+{
+    "player":{
+        "76561198108796479":{
+            "player_name": "Mercury",
+            "team_name": "TYLOO",
+            "player_seat": 1
+        },
+        "76561198360407641":{
+            "player_name": "Jee",
+            "team_name": "TYLOO",
+            "player_seat": 2
+        },
+        "76561198006489426":{
+            "player_name": "aumaN",
+            "team_name": "TYLOO",
+            "player_seat": 3
+        },
+        "76561198355197522":{
+            "player_name": "Moseyuh",
+            "team_name": "TYLOO",
+            "player_seat": 4
+        },
+        "76561198364937038":{
+            "player_name": "JamYoung",
+            "team_name": "TYLOO",
+            "player_seat": 5
+            
+        },
+        "76561198196356515":{
+            "player_name": "Valiance",
+            "team_name": "SFi",
+            "player_seat": 6
+        },
+        "76561198268798739":{
+            "player_name": "vision",
+            "team_name": "SFi",
+            "player_seat": 7
+        },
+        "76561198014912532":{
+            "player_name": "keen",
+            "team_name": "SFi",
+            "player_seat": 8
+        },
+        "76561198163665188":{
+            "player_name": "SaVage",
+            "team_name": "SFi",
+            "player_seat": 9
+        },
+        "76561198144493390":{
+            "player_name": "shadiy",
+            "team_name": "SFi",
+            "player_seat": 10
+        }
+    },
+    "teams":{
+        "left": "TYLOO",
+        "right": "Semper Fi"
+    }
+}

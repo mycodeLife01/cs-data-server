@@ -1,0 +1,59 @@
+{
+    "player":{
+        "76561198105325361":{
+            "player_name": "cate",
+            "team_name": "FARI",
+            "player_seat": 1
+        },
+        "76561198259885560":{
+            "player_name": "twy321",
+            "team_name": "FARI",
+            "player_seat": 2
+        },
+        "76561198143868310":{
+            "player_name": "lan",
+            "team_name": "FARI",
+            "player_seat": 3
+        },
+        "76561198421195896":{
+            "player_name": "Roninbaby",
+            "team_name": "FARI",
+            "player_seat": 4
+        },
+        "76561198354631329":{
+            "player_name": "bza",
+            "team_name": "FARI",
+            "player_seat": 5
+            
+        },
+        "76561199030058795":{
+            "player_name": "dodZ",
+            "team_name": "XO eSports",
+            "player_seat": 6
+        },
+        "76561199623794881":{
+            "player_name": "B1lal",
+            "team_name": "XO eSports",
+            "player_seat": 7
+        },
+        "76561197997147712":{
+            "player_name": "OSCAR",
+            "team_name": "XO eSports",
+            "player_seat": 8
+        },
+        "76561199024583803":{
+            "player_name": "0SAMAS",
+            "team_name": "XO eSports",
+            "player_seat": 9
+        },
+        "76561198366635943":{
+            "player_name": "Polbandana",
+            "team_name": "XO eSports",
+            "player_seat": 10
+        }
+    },
+    "teams":{
+        "left": "FATED RISE",
+        "right": "XO eSports"
+    }
+}

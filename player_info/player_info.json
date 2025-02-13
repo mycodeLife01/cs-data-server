@@ -1,0 +1,59 @@
+{
+    "player":{
+        "76561198045397601":{
+            "player_name": "SOMEBODY",
+            "team_name": "RA",
+            "player_seat": 1
+        },
+        "76561199016206318":{
+            "player_name": "L1haNg",
+            "team_name": "RA",
+            "player_seat": 2
+        },
+        "76561198013230247":{
+            "player_name": "Summer",
+            "team_name": "RA",
+            "player_seat": 3
+        },
+        "76561198352656104":{
+            "player_name": "ChildKing",
+            "team_name": "RA",
+            "player_seat": 4
+        },
+        "76561197976393269":{
+            "player_name": "kaze",
+            "team_name": "RA",
+            "player_seat": 5
+            
+        },
+        "76561198374043106":{
+            "player_name": "Ph1NNN",
+            "team_name": "GDR",
+            "player_seat": 6
+        },
+        "76561197979015766":{
+            "player_name": "R2B2",
+            "team_name": "GDR",
+            "player_seat": 7
+        },
+        "76561198449686750":{
+            "player_name": "Bhavi",
+            "team_name": "GDR",
+            "player_seat": 8
+        },
+        "76561198394198388":{
+            "player_name": "Rossi",
+            "team_name": "GDR",
+            "player_seat": 9
+        },
+        "76561197968963219":{
+            "player_name": "f1redup",
+            "team_name": "GDR",
+            "player_seat": 10
+        }
+    },
+    "teams":{
+        "left": "Rare Atom",
+        "right": "Gods Reign"
+    }
+}
